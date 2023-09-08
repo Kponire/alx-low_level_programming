@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (second_digit = 9; second_digit > first_digit; second_digit--)
 		{
-			if(second_digit)
+			if (second_digit)
 			{
 				putchar(48 + first_digit);
 				putchar(48 + second_digit);

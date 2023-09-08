@@ -9,28 +9,29 @@
 
 int main(void)
 {
-	int first_digit;
-	int second_digit = 0;
+	int a;
+	int b = 0;
 
-	while (first_digit < 10)
+	while (b < 10)
 	{
-		first_digit = 0;
-		while (second_digit < 10)
+		a = 0;
+		while (a < 10)
 		{
-			if (first_digit != second_digit && first_digit < second_digit)
+			if (b != a && b < a)
 			{
-				putchar(48 + first_digit);
-				putchar(48 + second_digit);
-				if (first_digit + second_digit != 17)
+				putchar(48 + b);
+				putchar(48 + a);
+
+				if (a + b != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
 
-			second_digit++;
+			a++;
 		}
-		first_digit++;
+		b++;
 	}
 
 	putchar('\n');

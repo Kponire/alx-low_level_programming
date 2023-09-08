@@ -16,10 +16,13 @@ int main(void)
 	{
 		for (second_digit = 9; second_digit > first_digit; second_digit--)
 		{
-			putchar(48 + first_digit);
-			putchar(48 + second_digit);
-			putchar(',');
-			putchar(' ');
+			if (first_digit + second_digit != 17)
+			{
+				putchar(48 + first_digit);
+				putchar(48 + second_digit);
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
 

@@ -10,20 +10,27 @@
 int main(void)
 {
 	int first_digit;
-	int second_digit;
+	int second_digit = 0;
 
-	for (first_digit = 0; first_digit <= 9; first_digit++)
+	while (first_digit < 10)
 	{
-		for (second_digit = 9; second_digit > first_digit; second_digit--)
+		first_digit = 0;
+		while (second_digit < 10)
 		{
-			putchar(48 + first_digit);
-			putchar(48 + second_digit);
-			if (first_digit + second_digit != 17)
+			if (first_digit != second_digit && first_digit < second_digit)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(48 + first_digit);
+				putchar(48 + second_digit);
+				if (first_digit + second_digit != 17)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+
+			second_digit++;
 		}
+		first_digit++;
 	}
 
 	putchar('\n');

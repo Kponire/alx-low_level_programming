@@ -18,6 +18,6 @@ int main(void)
 		if (sum % 2 == 0)
 			count += sum;
 	}
-	printf("%d\n", count);
+	printf("%lu\n", count);
 	return (0);
 }

@@ -8,7 +8,7 @@
  * one of the bytes in accept, or NULL
  */
 
-unsigned int _strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 

@@ -11,7 +11,7 @@ char *str_concat(char *s1, char *s2)
 {
 	unsigned int i;
 	unsigned int j;
-	unsigned int k, m = 0;
+	unsigned int k, m;
 	char *newstr;
 
 	if (s1 == NULL)
@@ -32,7 +32,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		newstr[k] = s1[k];
 	}
-	for (m; m <= j; k++, m++)
+	for (m = 0; m <= j; k++, m++)
 	{
 		newstr[k] = s2[m];
 	}

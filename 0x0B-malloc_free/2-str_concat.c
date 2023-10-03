@@ -9,8 +9,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	unsigned int i;
-	unsigned int j;
+	unsigned int i = 0;
+	unsigned int j = 0;
 	unsigned int k, m;
 	char *newstr;
 
@@ -22,7 +22,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 	while (s2[j] != '\0')
 		j++;
-	newstr = malloc(sizeof(char) * (i + j + 1));
+	newstr = (char *)malloc(sizeof(char) * (i + j + 1));
 	if (newstr == NULL)
 	{
 		free(newstr);

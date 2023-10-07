@@ -34,7 +34,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	for (k = 0; k < i; k++)
 		newstr[k] = s1[k];
-	for (; k <= (i + n); k++)
+	for (; k < (i + n); k++)
 		newstr[k] = s2[k - i];
 	newstr[k] = '\0';
 	return (newstr);

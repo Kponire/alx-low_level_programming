@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	unsigned long int timestable;
+	unsigned long timestable;
 	int i;
 	int j;
 

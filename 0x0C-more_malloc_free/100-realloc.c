@@ -32,7 +32,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	}
 	adjstring = ptr;
-	memory = (char *)malloc(sizeof(adjstring) * new_size);
+	memory = (char *)malloc(sizeof(*adjstring) * new_size);
 	if (memory == NULL)
 	{
 		free(ptr);
@@ -43,6 +43,6 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	{
 		fillup[i] = *adjstring++;
 	}
-	free (ptr);
+	free(ptr);
 	return (memory);
 }

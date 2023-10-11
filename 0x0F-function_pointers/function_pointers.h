@@ -1,5 +1,7 @@
 #ifndef MAIN_HEADER
 #define MAIN_HEADER
+#include <stdlib.h>
+#include <stddef.h>
 
 int _putchar(char s);
 void print_name(char *name, void (*f)(char *));

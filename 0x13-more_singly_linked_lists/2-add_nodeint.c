@@ -5,6 +5,7 @@
  * of a listint_t list
  * @head: a pointer to the structure listint_t
  * @n: the point where to insert the node
+ * Return: address of the new element or NULL if it failed
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)

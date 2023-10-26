@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int length = 0, base = 1;
-	unsigned int sum;
+	unsigned int sum = 0;
 
 	if (b == NULL)
 	{
@@ -19,6 +19,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		length++;
 	}
+	length--;
 	while (length >= 0)
 	{
 		if (b[length] != '0' && b[length] != '1')
